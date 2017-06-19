@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var infoLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +23,11 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func doHello(_ sender: UIButton) {
+        infoLabel.text = "Hello World!"
+    }
+    @IBAction func doClear(_ sender: Any) {
+        infoLabel.text = ""
+    }
 }
 
