@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         infoLabel.text = "Hello World!"
     }
     @IBAction func doClear(_ sender: Any) {
-        infoLabel.text = ""
+        infoLabel.text = "            "
     }
 }
 
